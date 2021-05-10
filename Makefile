@@ -4,7 +4,7 @@ CFLAGS = -g -Wall
 
 TARGET = start
 
-OBJ = main.o test.o
+OBJ = 
 
 all: $(TARGET)
 	
