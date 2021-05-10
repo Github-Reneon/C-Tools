@@ -11,8 +11,8 @@ all: $(TARGET)
 $(TARGET):$(OBJ)
 	$(CC) $(CFLAGS) -o $(TARGET) *.o
 
-%.o: %.cpp
-	$(CC) $(CFLAGS) -c $(basename $@).cpp -o $(basename $@).o
+%.o: src/%.cpp
+	$(CC) $(CFLAGS) -c src/$(basename $@).cpp -o $(basename $@).o
 
 run: all
 	$(RM) *.o
